@@ -62,7 +62,7 @@ class Screen3 extends StatelessWidget {
                     children: [
                       TextButton(onPressed: this.skip, child: Text("Skip")),
                       FloatingActionButton(
-                        onPressed: this.next,
+                        onPressed: this.skip,
                         elevation: 0,
                         child: Icon(Icons.navigate_next),
                       ),

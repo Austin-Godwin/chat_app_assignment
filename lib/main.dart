@@ -5,6 +5,7 @@ import 'package:super_todo/styles/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'pages/Login.dart';
+import 'pages/Signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +23,9 @@ class MyApp extends StatelessWidget {
           button: GoogleFonts.lato(color: cLight,fontWeight: FontWeight.bold,fontSize: 18),
           headline1: GoogleFonts.lato(color: cLight,fontWeight: FontWeight.bold),
           headline3: GoogleFonts.lato(color: cLight,fontWeight: FontWeight.bold),
-          headline5: GoogleFonts.lato(color: cLight)
+          headline4: GoogleFonts.lato(color: cLight,fontWeight: FontWeight.bold),
+          headline5: GoogleFonts.lato(color: cLight),
+          headline6: GoogleFonts.lato(color: cLight,fontWeight: FontWeight.bold,fontSize: 18)
           ),
       ),
       themeMode: ThemeMode.dark,
@@ -31,7 +34,8 @@ class MyApp extends StatelessWidget {
       routes: {
         SplashScreen.route:(BuildContext context)=>SplashScreen(),
         OnBoarding.route:(BuildContext context)=>OnBoarding(),
-        Login.route: (BuildContext context) => Login()
+        Login.route: (BuildContext context) => Login(),
+        Signup.route: (BuildContext context) => Signup()
       },
     );
   }

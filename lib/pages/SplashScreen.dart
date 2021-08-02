@@ -9,7 +9,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     void gotoOnBoarding() {
       Navigator.of(context).pushNamed(OnBoarding.route);
     }
@@ -26,7 +25,11 @@ class SplashScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.chat_bubble_outline_rounded, color: cPrimary, size: 100),
+            Icon(
+              Icons.chat_bubble_outline_rounded,
+              color: cPrimary,
+              size: 100,
+            ),
             Text(
               "Tungar Messenger",
               style: Theme.of(context)
